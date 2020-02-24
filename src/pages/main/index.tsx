@@ -2,7 +2,7 @@ import React from 'react';
 import style from './index.module.css';
 import log from 'loglevel';
 
-import { Breadcrumb } from 'antd';
+import { Breadcrumb, Icon, Button } from 'antd';
 
 import Loader from '../../components/loader';
 
@@ -29,7 +29,13 @@ export default class Component extends React.Component<Props, State> {
                             </Breadcrumb.Item>
                         </Breadcrumb>
                     </div>
-                    <div className={[style.title].join(' ')}>Esquema de Administración de Sedes</div>
+                    <div className={[style.title].join(' ')}>Sede San Isidro</div>
+                    <div className={[style.buttons].join(' ')}>
+                        <Button icon="plus" size="small"/>
+                        <Button icon="delete"/>
+                        <Button icon="edit"/>
+                        <Button icon="copy"/>
+                    </div>
                 </Loader>
             </div>
         )

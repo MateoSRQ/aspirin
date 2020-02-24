@@ -55,7 +55,7 @@
 .title .middle:after {
     background-color: #dad7d7;
     content: '';
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid #d5d5d5;
     width: calc(100% - 20px);
     height: 1px;
     position: absolute;
@@ -71,9 +71,9 @@
 }
 
 .title .right:after {
-    background-color: #ffffff;
+    background-color: #dad7d7;
     content: '';
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #d5d5d5;
     width: calc(100% - 20px);
     height: 1px;
     position: absolute;

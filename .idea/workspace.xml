@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a85a28b1-89f5-461f-8f9e-dc08c313d92e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/master/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/master/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1582343117306</updated>
       <workItem from="1582343118986" duration="14753000" />
-      <workItem from="1582465503906" duration="17284000" />
+      <workItem from="1582465503906" duration="20426000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1582513810876</created>
@@ -109,7 +106,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582513810876</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial">
+      <created>1582514971252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582514971252</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,10 +129,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582343219272" />
-    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582513809485">
+    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582514970736">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582513809485" />
+    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582514970736" />
+    <state x="829" y="418" key="Github.ShareDialog" timestamp="1582515006964">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582515006964" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1582514992017">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582514992017" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1582511929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

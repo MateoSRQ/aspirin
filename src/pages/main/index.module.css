@@ -38,3 +38,71 @@
     color: #39557e;
 }
 
+.component :global(.ant-btn) > :global(.anticon) {
+    line-height: 1;
+    margin-top: -3px;
+    color: gray;
+}
+
+.component :global(.ant-btn) {
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.1), 0 0px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.component :global(.ant-btn:hover) {
+    box-shadow: 0 0px 3px 0 rgba(255, 255, 255, 0.1), 0 0px 2px 0 rgba(255, 255, 255, 0.06);
+    border: 1px solid transparent;
+    border-top-color: rgb(217, 217, 217);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(217, 217, 217);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(217, 217, 217);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(217, 217, 217);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.component :global(.ant-btn:focus) {
+    box-shadow: 0 0px 3px 0 rgba(255, 255, 255, 0.1), 0 0px 2px 0 rgba(255, 255, 255, 0.06);
+    border: 1px solid transparent;
+    border-top-color: rgb(217, 217, 217);
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-color: rgb(217, 217, 217);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-bottom-color: rgb(217, 217, 217);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left-color: rgb(217, 217, 217);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.component :global(.ant-btn:hover) > :global(.anticon) {
+    color: #2f4a73;
+}
+
+.buttons {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.buttons > button {
+    margin: 10px;
+}
