@@ -19,7 +19,7 @@ export default class Component extends React.Component<Props, State> {
         log.info('Loader:constructor reached');
         super(props);
         this.state = {
-            status: 'loading'
+            status: 'loaded'
         }
     }
 
@@ -68,7 +68,7 @@ export default class Component extends React.Component<Props, State> {
     }
 
     static defaultProps = {
-        status: "loading",
+        status: "loaded",
     }
 }
 

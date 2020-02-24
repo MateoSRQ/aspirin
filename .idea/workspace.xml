@@ -2,136 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a85a28b1-89f5-461f-8f9e-dc08c313d92e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-BoldItalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/hinted-subset-NotoSans.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/noto_sans/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-BoldItalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBoldItalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-ExtraBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-LightItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-LightItalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-LightItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-LightItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-LightItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBoldItalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/hinted-subset-OpenSans-SemiBoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/open_sans/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-BoldItalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-BoldItalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-BoldItalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-BoldItalic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Italic.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/hinted-subset-PTSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/pt_sans/stylesheet.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/face_co.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/_base/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/_base/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/list/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/list/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loader/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/loader/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/_base/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/_base/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/id/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/id/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/list/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/list/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/list/item/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/list/item/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/main/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/main/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/master/index.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/master/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/index.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/loader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/master/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/master/index.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,8 +100,16 @@
       <option name="presentableId" value="Default" />
       <updated>1582343117306</updated>
       <workItem from="1582343118986" duration="14753000" />
-      <workItem from="1582465503906" duration="16232000" />
+      <workItem from="1582465503906" duration="17284000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <created>1582513810876</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582513810876</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,16 +117,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial" />
   </component>
   <component name="WindowStateProjectService">
     <state x="640" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582343219272">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582343219272" />
-    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582343573678">
+    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582513809485">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582343573678" />
+    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582513809485" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1582511929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -8,7 +8,9 @@ import 'antd/dist/antd.css';
 
 
 interface State {}
-interface Props {}
+interface Props {
+    active?: boolean
+}
 export default class Component extends React.Component<Props, State> {
     constructor(props: Props) {
         log.info('Item:constructor reached');
@@ -17,8 +19,12 @@ export default class Component extends React.Component<Props, State> {
 
     render() {
         log.info('Item:render reached');
+        let styles = [style.component]
+        if (this.props.active) {
+            styles = [style.component, style.active];
+        }
         return (
-            <div className={[style.component].join(' ')}>
+            <div className={styles.join(' ')}>
                 <Row>
                     <Col span={4} className={[style.centered].join(' ')}>
                         100

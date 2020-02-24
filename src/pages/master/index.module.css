@@ -49,7 +49,7 @@
 .title .middle {
     width: middleWidth;
     height: titleHeight;
-    background-color: #fff;
+    background-color: #f3f3f3;
 }
 
 .title .middle:after {
@@ -67,7 +67,7 @@
     width: calc(100% - leftWidth - middleWidth);
     height: titleHeight;
     position: absolute;
-    background-color: #ffffff;
+    background-color: #f3f3f3;
 }
 
 .title .right:after {
@@ -92,7 +92,7 @@
 .middle {
     height: 100%;
     width: middleWidth;
-    background-color: #fff;
+    background-color: #f3f3f3;
     position: absolute;
     left: leftWidth;
 }
@@ -101,6 +101,6 @@
     width: calc(100% - leftWidth - middleWidth);
     height: calc(100%);
     position: absolute;
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     left: calc(leftWidth + middleWidth);
 }

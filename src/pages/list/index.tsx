@@ -31,7 +31,7 @@ export default class Component extends React.Component<Props, State> {
                 <div className={[style.body].join(' ')}>
                     <Loader>
                         <List>
-                            <Item />
+                            <Item active/>
                             <Item />
                             <Item />
                             <Item />
