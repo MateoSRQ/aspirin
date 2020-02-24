@@ -1,0 +1,106 @@
+@value leftWidth: 280px;
+@value middleWidth: 350px;
+@value titleHeight: 50px;
+@value padding: 12px;
+@value idHeight: 250px;
+
+.component {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.body {
+    height: calc(100% - titleHeight);
+    width: 100%;
+    background-color: #F1F2F4;
+    margin-top: titleHeight;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: titleHeight;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.title .left {
+    width: leftWidth;
+    height: titleHeight;
+    background-color: #39557e;
+}
+
+.title .left:after {
+    content: '';
+    border-bottom: 1px solid #2f4a73;
+    width: calc(100% - 20px);
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.title .middle {
+    width: middleWidth;
+    height: titleHeight;
+    background-color: #fff;
+}
+
+.title .middle:after {
+    background-color: #dad7d7;
+    content: '';
+    border-bottom: 1px solid #aaa;
+    width: calc(100% - 20px);
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.title .right {
+    width: calc(100% - leftWidth - middleWidth);
+    height: titleHeight;
+    position: absolute;
+    background-color: #ffffff;
+}
+
+.title .right:after {
+    background-color: #ffffff;
+    content: '';
+    border-bottom: 1px solid #e0e0e0;
+    width: calc(100% - 20px);
+    height: 1px;
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.left {
+    width: leftWidth;
+    height: 100%;
+    background-color: #39557e;
+    position: absolute;
+    left: 0;
+}
+
+.middle {
+    height: 100%;
+    width: middleWidth;
+    background-color: #fff;
+    position: absolute;
+    left: leftWidth;
+}
+
+.right {
+    width: calc(100% - leftWidth - middleWidth);
+    height: calc(100%);
+    position: absolute;
+    background-color: #ffffff;
+    left: calc(leftWidth + middleWidth);
+}

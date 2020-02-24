@@ -1,0 +1,30 @@
+@value searchHeight 52px;
+@value padding: 10px;
+
+.component {
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+
+
+.search {
+    padding: padding;
+    height: searchHeight;
+}
+
+.search * {
+    font-family: 'Noto Sans', 'Arial', sans-serif !important;
+    font-size: 13px !important;
+    letter-spacing: -.4px;
+    color: #4e4e4e;
+}
+
+.body {
+    height: calc(100% - searchHeight*2);
+    width: 100%;
+}
+
+:global(.thumb-horizontal) {
+    background-color: red !important;
+}
