@@ -27,7 +27,7 @@ export default class Component extends React.Component<Props, State> {
             <div className={styles.join(' ')}>
                 <Row>
                     <Col span={4} className={[style.centered].join(' ')}>
-                        100
+                        <div className={[style.circle].join(' ')}></div>
                     </Col>
                     <Col span={2}></Col>
                     <Col span={18}>

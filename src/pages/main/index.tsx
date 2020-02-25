@@ -30,12 +30,14 @@ export default class Component extends React.Component<Props, State> {
                         </Breadcrumb>
                     </div>
                     <div className={[style.title].join(' ')}>Sede San Isidro</div>
-                    <div className={[style.buttons].join(' ')}>
-                        <Button icon="plus" size="small"/>
-                        <Button icon="delete"/>
-                        <Button icon="edit"/>
-                        <Button icon="copy"/>
-                    </div>
+                    {/*<div className={[style.buttons].join(' ')}>*/}
+
+
+                    {/*    <Icon type="plus"  style={{ fontSize: '24px', color: '#000' }}/>*/}
+                    {/*    <Icon type="delete"  style={{ fontSize: '24px', color: '#000' }}/>*/}
+                    {/*    <Icon type="edit"  style={{ fontSize: '24px', color: '#000' }}/>*/}
+                    {/*    <Icon type="copy"  style={{ fontSize: '24px', color: '#000' }}/>*/}
+                    {/*</div>*/}
                 </Loader>
             </div>
         )

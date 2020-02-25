@@ -19,17 +19,19 @@
 
 
 .title {
-    font-size: 16px !important;
-    margin-top: -7px;
-    font-weight: 600;
+    font-size: 14px !important;
+    margin-top: -9px;
+    font-weight: 500;
     font-family: 'Noto Sans', sans-serif;
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
     font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
     letter-spacing: -0.4px;
     width: 100%;
     padding-left: 10px;
     -webkit-font-smoothing: antialiased !important;
-    color: #292d26;
+    color: #3c3b3b;
+    margin-left: 10px;
 }
 
 .subTitle {
@@ -39,12 +41,16 @@
     width: 100%;
     padding-left: 10px;
     margin-top: -3px;
-    -webkit-font-smoothing: antialiased !important;
+    /* -webkit-font-smoothing: antialiased !important; */
     font-family: 'Noto Sans', sans-serif;
-    /* font-family: 'PT Sans', sans-serif; */
-    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
+    margin-left: 10px;
+    font-style: italic;
     color: #676767;
     text-transform: uppercase;
+
 }
 
 .prefix {
@@ -58,7 +64,8 @@
     font-family: 'Noto Sans', sans-serif;
     font-family: 'PT Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
-    color: #096dd9;
+    font-family: 'Work Sans', sans-serif;
+    color: #2f4a73;
     margin-bottom: -3px;
     padding-bottom: 5px;
 }
@@ -67,14 +74,17 @@
     display: flex;
     justify-items: center;
     justify-content: center;
-    flex-direction: column;
-    height: 49px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
     text-align: center;
-    font-family: 'Open Sans', Arial;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
     font-size: 16px;
-    background-color: #39557e;
-    border-radius: 50%;
+    height: 49px;
     color: white;
 }
 
@@ -86,6 +96,13 @@
     font-size: 16px;
     letter-spacing: -0.5px;
     text-align: center;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #2f4a73;
+    border-radius: 50%;
 }
 
 .active {
