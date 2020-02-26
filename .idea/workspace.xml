@@ -2,59 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a85a28b1-89f5-461f-8f9e-dc08c313d92e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraBold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraLight.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraLight.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraLight.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraLight.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-ExtraLight.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Light.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Medium.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Medium.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Medium.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Medium.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-SemiBold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-SemiBold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-SemiBold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-SemiBold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-SemiBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Thin.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Thin.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Thin.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Thin.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/hinted-subset-WorkSans-Thin.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/work_sans/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataLoader/index.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/dataLoader/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/master/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/master/index.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,16 +59,16 @@
     <property name="ts.external.directory.path" value="D:\ts\aspirin\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ts\aspirin\src\pages\id" />
-      <recent name="D:\ts\aspirin\src\components" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ts\aspirin\src\components" />
       <recent name="D:\ts\aspirin\src\pages" />
       <recent name="D:\ts\aspirin\src\pages\list" />
       <recent name="D:\ts\aspirin\public" />
       <recent name="D:\ts\aspirin\src\pages\id" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ts\aspirin\src\pages\id" />
+      <recent name="D:\ts\aspirin\src\components" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -146,7 +97,8 @@
       <option name="presentableId" value="Default" />
       <updated>1582343117306</updated>
       <workItem from="1582343118986" duration="14753000" />
-      <workItem from="1582465503906" duration="24539000" />
+      <workItem from="1582465503906" duration="24669000" />
+      <workItem from="1582679573815" duration="6307000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1582513810876</created>
@@ -169,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582521266672</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial">
+      <created>1582607176204</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1582607176204</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,21 +144,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582343219272" />
-    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582521266052">
+    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582607270371">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582521266052" />
+    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582607270371" />
     <state x="829" y="418" key="Github.ShareDialog" timestamp="1582515006964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582515006964" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1582521273393">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1582607276889">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582521273393" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582607276889" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1582511929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="276" width="586" height="488" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582511929177" />
+    <state x="692" y="323" key="git4idea.merge.GitPullDialog" timestamp="1582607189687">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="692" y="323" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582607189687" />
   </component>
 </project>
