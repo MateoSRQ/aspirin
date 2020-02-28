@@ -6,23 +6,62 @@ import { Input } from 'antd';
 import List from '../../components/list';
 import Item from './item';
 import Loader from '../../components/loader';
-import withData from '../../components/dataLoader';
+import axios from 'axios';
+import jsonpack from 'jsonpack';
 
 const { Search } = Input;
 
-interface State {}
-interface Props {}
+interface State {
+    sedes: any
+    status: string
+};
 
-const DataLoader = withData(Loader);
+interface Props {
+    sedes: any
+    status: string
+}
+
 
 export default class Component extends React.Component<Props, State> {
     constructor(props: Props) {
         log.info('List:constructor reached');
         super(props);
+        this.state = ({
+            sedes: null,
+            status: 'loading'
+        });
+        //this.loadSede = this.loadSede.bind(this);
+    }
+
+    async componentDidMount(): Promise<void> {
+        log.info('List:componentDidMount reached');
+        //await this.loadSede();
+    }
+
+    componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any): void {
+        console.log('diu')
+        if (this.props != prevProps) {
+            this.setState({
+                sedes: this.props.sedes,
+                status:this.props.status
+            })
+        }
     }
 
     render() {
         log.info('List:render reached');
+        let items = null;
+        if (this.state.sedes) {
+            items = this.state.sedes.map((item: any) => {
+                return (
+                    <Item
+                        {...item}
+                        key={item._id}
+                    />
+                )
+            })
+        }
+
         return (
             <div className={[style.component].join(' ')}>
                 <div className={[style.search].join(' ')}>
@@ -33,44 +72,19 @@ export default class Component extends React.Component<Props, State> {
                 </div>
 
                 <div className={[style.body].join(' ')}>
-
-                    <DataLoader connections={[
-                        {variable: 'sedes',     url: "http://127.0.0.1:3333/api/v2/sedes",      method: "get"},
-                        {variable: 'examenes',  url: "http://127.0.0.1:3333/api/v2/examenes",   method: "get"}
-                    ]}>
+                    <Loader status={this.state.status}>
                         <List>
-                        <Item active/>
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item active/>
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                        <Item />
-                    </List>
-                </DataLoader>
-
+                            {items}
+                        </List>
+                    </Loader>
                 </div>
-
             </div>
         )
+    }
 
+    static defaultProps: {
+        sedes: null,
+        status: 'loading'
     }
 }
 

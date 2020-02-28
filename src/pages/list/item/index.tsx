@@ -10,11 +10,16 @@ import 'antd/dist/antd.css';
 interface State {}
 interface Props {
     active?: boolean
-}
+    _id: string,
+    nombre: string,
+    descripcion: string
+};
+
 export default class Component extends React.Component<Props, State> {
     constructor(props: Props) {
         log.info('Item:constructor reached');
         super(props);
+        console.log(this.props)
     }
 
     render() {
@@ -31,9 +36,9 @@ export default class Component extends React.Component<Props, State> {
                     </Col>
                     <Col span={2}></Col>
                     <Col span={18}>
-                        <div className={[style.prefix].join(' ')}>210921092109210921</div>
-                        <div className={[style.title].join(' ')}>Clínica Surco</div>
-                        <div className={[style.subTitle].join(' ')}>Calle Surco #1626, Surco</div>
+                        <div className={[style.prefix].join(' ')}>{this.props._id}</div>
+                        <div className={[style.title].join(' ')}>{this.props.nombre}</div>
+                        <div className={[style.subTitle].join(' ')}>{this.props.descripcion}</div>
                     </Col>
                 </Row>
             </div>

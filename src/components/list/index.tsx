@@ -10,18 +10,32 @@ log.setLevel('warn');
 interface Props {
     children?: React.ReactNode[]
 }
-export default class Component extends React.Component<Props> {
+interface State {
+    scrollClass: any
+}
+
+export default class Component extends React.Component<Props, State> {
+
     constructor(props: Props) {
         log.info('List:constructor reached');
         super(props);
+        this.state = {
+            scrollClass: style.top
+        }
     }
 
     render() {
         log.info('List:render reached');
+
         return (
-            <div className={[style.component].join(' ')}>
+            <div className={[style.component, this.state.scrollClass].join(' ')}>
                 <Scrollable
                     className={[style.scroller].join(' ')}
+                    onScrollFrame={(values: any) => {
+                        if (values.top == 0) {console.log('top'); this.setState({scrollClass: style.top})}
+                        else if (values.top == 1) {console.log('bottom'); this.setState({scrollClass: style.bottom})}
+                        else { this.setState({scrollClass: null})}
+                    }}
                     // renderTrackHorizontal={() => { return <div {...this.props} className="track-horizontal"/>}}
                     // renderTrackVertical={  () => { return <div {...this.props} className="track-vertical"/>}}
                     // renderThumbHorizontal={() => { return <div {...this.props} className="thumb-horizontal"/>}}

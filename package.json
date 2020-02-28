@@ -26,7 +26,8 @@
     "react-scripts": "3.4.0",
     "recharts": "^2.0.0-beta.1",
     "typescript": "~3.7.2",
-    "validate.js": "^0.13.1"
+    "validate.js": "^0.13.1",
+    "validatejs": "^0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -9,7 +9,7 @@ log.setLevel('warn');
 
 interface Props {
     status: string
-    children: React.ReactNode
+    children: any
 }
 interface State {
     status: string
@@ -18,8 +18,9 @@ export default class Component extends React.Component<Props, State> {
     constructor(props: Props) {
         log.info('Loader:constructor reached');
         super(props);
+
         this.state = {
-            status: 'loaded'
+            status: this.props.status?this.props.status:'loading'
         }
     }
 
@@ -57,18 +58,20 @@ export default class Component extends React.Component<Props, State> {
                 break;
         }
 
+        let children = this.props.children;
+
         return (
             <div className={[style.component].join(' ')}>
                 {loader}
                 <div className={[style.container].join(' ')}>
-                    {this.props.children}
+                    {children}
                 </div>
             </div>
         )
     }
 
     static defaultProps = {
-        status: "loaded",
+        status: "loading",
     }
 }
 

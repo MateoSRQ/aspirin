@@ -24,7 +24,7 @@
     font-weight: 500;
     font-family: 'Noto Sans', sans-serif;
     /* font-family: 'PT Sans', sans-serif; */
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'Open Sans', sans-serif;*/
     /* font-family: 'Work Sans', sans-serif; */
     letter-spacing: -0.4px;
     width: 100%;
@@ -43,8 +43,8 @@
     margin-top: -3px;
     /* -webkit-font-smoothing: antialiased !important; */
     font-family: 'Noto Sans', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
+    /*font-family: 'PT Sans', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
     /* font-family: 'Work Sans', sans-serif; */
     margin-left: 10px;
     font-style: italic;
@@ -79,9 +79,9 @@
     flex-direction: row;
     text-align: center;
     font-family: 'Noto Sans', sans-serif;
-    font-family: 'PT Sans', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+    /*font-family: 'PT Sans', sans-serif;*/
+    /*font-family: 'Open Sans', sans-serif;*/
+    /*font-family: 'Work Sans', sans-serif;*/
     font-weight: 600;
     font-size: 16px;
     height: 49px;
