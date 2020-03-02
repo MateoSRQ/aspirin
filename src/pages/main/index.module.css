@@ -1,9 +1,16 @@
 .component {
     height: 100%;
     width: 100%;
-    /*background-color: #ffffff;*/
+}
 
-    /*box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);*/
+.container {
+    width: calc(100% - 20px);
+    padding: 15px;
+    height: calc(100% - 60px);
+    margin-left: 10px;
+    background: white;
+    margin-top: 50px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .breadcrumb {
@@ -12,7 +19,7 @@
     height: 30px;
     line-height: 30px;
     padding-left: 40px;
-    margin-top: -16px;
+    margin-top: 12px;
 }
 
 .breadcrumb :global(.ant-breadcrumb) {
@@ -32,9 +39,10 @@
     /* font-family: 'Cabin', sans-serif; */
     letter-spacing: -.5px;
     width: 100%;
-    height: 60px;
-    line-height: 60px;
+    height: 30px;
+    line-height: 30px;
     padding-left: 40px;
+    margin-top: -12px;
     color: #39557e;
 }
 
@@ -103,7 +111,7 @@
     flex-direction: row;
     position: absolute;
     right: 10px;
-    top: -35px;
+    top: 7px;
 }
 
 .buttons > button {
@@ -112,4 +120,65 @@
     font-size: 12px !important;
     letter-spacing: -.5px;
     font-weight: 600 !important;
+}
+
+.component :global(.ant-tabs-nav) * {
+    margin: 2px;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 12px !important;
+    letter-spacing: 0.8px;
+    /* font-weight: 400 !important; */
+    min-width: 150px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.component :global(.ant-tabs-nav) :global(.ant-tabs-tab-active) {
+    color: #2f4a73;
+    margin: 2px;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 12px !important;
+    letter-spacing: 0.8px;
+    /* font-weight: 400 !important; */
+    min-width: 150px;
+    text-align: center;
+    font-weight: 600;
+}
+
+
+/* TABLE */
+.component :global(.ant-table) {
+    font-family: 'Noto Sans', sans-serif !important;
+    /*font-family: 'Open Sans', sans-serif !important;*/
+    /*font-family: 'PT Sans', sans-serif !important;*/
+    /*font-family: 'Work Sans', sans-serif !important;*/
+    font-size: 12px !important;
+    letter-spacing: 0.8px;
+    /* font-weight: 400 !important; */
+    min-width: 150px;
+    text-align: center;
+    font-weight: 400;
+    color: black;
+}
+
+.paneButtons {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: row;
+    position: absolute;
+    right: 0px;
+    top: 64px;
+}
+
+.paneButtons > button {
+    margin: 2px;
+    font-family: 'Noto Sans', sans-serif !important;
+    font-size: 12px !important;
+    letter-spacing: -.5px;
+    font-weight: 600 !important;
+}
+
+.paneTable {
+    margin-top: 40px;
 }

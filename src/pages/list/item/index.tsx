@@ -13,13 +13,13 @@ interface Props {
     _id: string,
     nombre: string,
     descripcion: string
+    handleClick?: any
 };
 
 export default class Component extends React.Component<Props, State> {
     constructor(props: Props) {
         log.info('Item:constructor reached');
         super(props);
-        console.log(this.props)
     }
 
     render() {
@@ -29,7 +29,7 @@ export default class Component extends React.Component<Props, State> {
             styles = [style.component, style.active];
         }
         return (
-            <div className={styles.join(' ')}>
+            <div className={styles.join(' ')} onClick={ ()=> {this.props?.handleClick(this.props._id)}}>
                 <Row>
                     <Col span={4} className={[style.centered].join(' ')}>
                         <div className={[style.circle].join(' ')}></div>

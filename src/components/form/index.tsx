@@ -27,6 +27,7 @@ class FormInput extends React.Component<InputProps, InputState> {
         super(props);
         this.handleBlur = this.handleBlur.bind(this);
         this.handleChange = this.handleChange.bind(this);
+        this.handleReset = this.handleReset.bind(this);
         this.state = {
             value: this.props.value?this.props.value:null,
             validation: '',
@@ -36,6 +37,16 @@ class FormInput extends React.Component<InputProps, InputState> {
 
     componentDidMount(): void {
         this.props?.handleRefresh(this.handleBlur);
+        this.props?.handleReset(this.handleReset);
+    }
+
+    async handleReset() {
+        console.log('handle reset');
+        await this.setState({
+            value: null,
+            validation: '',
+            status: 'validating'
+        });
     }
 
     async handleChange(e: any) {
@@ -72,7 +83,7 @@ class FormInput extends React.Component<InputProps, InputState> {
 
     render() {
         log.info('Form:Input:render reached');
-        let {handleChange,  handleBlur, handleRefresh, name, label, value,  ...props} = this.props;
+        let {handleChange,  handleBlur, handleRefresh, handleReset, name, label, value,  ...props} = this.props;
         return (
             <div className={[style.component].join(' ')} key={name}>
                 <Form.Item
@@ -101,11 +112,13 @@ interface Props {
 class Component extends React.Component<Props> {
     protected rules: any
     protected handleRefresh: any
+    protected handleReset: any
 
     constructor(props: Props) {
         log.info('Form:constructor reached');
         super(props);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = [];
         this.handleRefresh = [];
     }
 
@@ -114,6 +127,9 @@ class Component extends React.Component<Props> {
         let values:any = []
         for (let f of this.handleRefresh) {
             values.push(await f());
+        }
+        for (let f of this.handleReset) {
+            await f();
         }
         return values;
     }
@@ -132,7 +148,8 @@ class Component extends React.Component<Props> {
                     React.cloneElement(child, {
                         key: child.props.name,
                         className: "input",
-                        handleRefresh: (f:any) => { this.handleRefresh.push(f)}
+                        handleRefresh: (f:any) => { this.handleRefresh.push(f)},
+                        handleReset: (f: any) => { this.handleReset.push(f) }
                     })
                 )
             })

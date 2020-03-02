@@ -80,4 +80,5 @@
     position: absolute;
     background-color: #f3f3f3;
     left: calc(leftWidth + middleWidth);
+    overflow: hidden;
 }

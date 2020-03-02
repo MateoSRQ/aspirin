@@ -8,13 +8,17 @@ import { Scrollbars } from 'react-custom-scrollbars';
 import ID from '../id';
 import List from '../list';
 import Main from '../main';
+import Loader from '../../components/loader';
 import axios from 'axios';
 import jsonpack from "jsonpack";
 
 interface State {
     bigSize: boolean,
     sedes: null,
-    sedesStatus: string
+    sedesStatus: string,
+    sedesData: any,
+    sedeActive: any,
+    mainStatus: string
 }
 
 interface Props {}
@@ -25,35 +29,65 @@ export default class Component extends React.Component<Props, State> {
         this.handleMediaQueryChange = this.handleMediaQueryChange.bind(this);
         this.loadSede = this.loadSede.bind(this);
         this.handleNewSedeSubmit = this.handleNewSedeSubmit.bind(this);
+        this.itemClick = this.itemClick.bind(this);
+
         this.state = {
             bigSize: true,
             sedes: null,
-            sedesStatus: 'loading'
+            sedesStatus: 'loading',
+            sedesData: null,
+            sedeActive: null,
+            mainStatus: 'loading'
         };
     }
 
+    async itemClick(id: any) {
+        log.info('Master:itemClick reached');
+        console.log('yyy')
+        this.setState({mainStatus: 'loading'});
+        try {
+            let p1 = await axios({
+                method: 'get',
+                url: 'http://127.0.0.1:3333/api/v3/sede/' + id
+            });
+            p1 = jsonpack.unpack(p1.data);
+            this.setState({
+                sedesData: p1,
+                mainStatus: 'loaded',
+                sedeActive: id
+            });
+        }
+        catch (e) {
+            console.log(e)
+        }
+    }
 
     async handleNewSedeSubmit(data: any) {
+        log.info('Master:handleNewSedeSubmit reached');
         try {
-
-            await axios({
+            let r1 = await axios({
                 method: 'post',
                 url: 'http://127.0.0.1:3333/api/v3/sedes',
                 data: data
             });
+            let rr1 = r1.data;
+            console.log('RESPONSE');
+            console.log(r1);
+
             // await this.loadSede();
 
             await this.setState({
                 sedesStatus: 'loading'
             })
             let p1 = await axios({method: 'get', url: 'http://127.0.0.1:3333/api/v3/sedes'});
+            let response = jsonpack.unpack(p1.data);
 
             await this.setState({
-                sedes: jsonpack.unpack(p1.data),
-                sedesStatus: 'loaded'
+                sedes: response,
+                sedesStatus: 'loaded',
+                sedeActive: rr1._id
             })
-
-
+            console.log(this.state);
         }
         catch (e) {
             console.log(e)
@@ -63,7 +97,6 @@ export default class Component extends React.Component<Props, State> {
     handleMenuClick(): void {
         log.info('Master:handleMenuClick reached');
     }
-
 
     handleMediaQueryChange(e: any) {
         log.info('Master:handleMediaQueryChange reached');
@@ -78,26 +111,22 @@ export default class Component extends React.Component<Props, State> {
     }
 
     async loadSede() {
-
+        log.info('Master:loadSede reached');
         await this.setState({
             sedesStatus: 'loading'
         })
         let p1 = await axios({method: 'get', url: 'http://127.0.0.1:3333/api/v3/sedes'});
-
+        let response = jsonpack.unpack(p1.data);
         await this.setState({
-            sedes: jsonpack.unpack(p1.data),
-            sedesStatus: 'loaded'
+            sedes: response,
+            sedesStatus: 'loaded',
+            sedeActive: response[0]._id
         })
-
     }
-
 
     render() {
         log.info('Master:render reached');
-        // let size = 1440;
-        // if (!this.state.bigSize) {
-        //     size = 1120;
-        // }
+
         return (
             <div className={[style.component].join(' ')}>
                 <MediaQuery minWidth={1440} onChange={this.handleMediaQueryChange}>
@@ -113,10 +142,19 @@ export default class Component extends React.Component<Props, State> {
                         <ID />
                     </div>
                     <div className={[style.middle].join(' ')}>
-                        <List sedes={this.state.sedes} status={this.state.sedesStatus}/>
+                        <List
+                            sedes={this.state.sedes}
+                            status={this.state.sedesStatus}
+                            handleItemClick={this.itemClick}
+                            active={this.state.sedeActive}
+                        />
                     </div>
                     <div className={[style.right].join(' ')}>
-                        <Main newSedeSubmit={this.handleNewSedeSubmit} />
+                        <Main
+                            newSedeSubmit={this.handleNewSedeSubmit}
+                            data={this.state.sedesData}
+                            status={this.state.mainStatus}
+                        />
                     </div>
                 </div>
             </div>

@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a85a28b1-89f5-461f-8f9e-dc08c313d92e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/images/pattern1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pattern2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/pattern3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/index.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/modal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/main/item/index.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/main/item/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dataLoader/index.module.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dataLoader/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/list/index.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list/index.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/loader/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/loader/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/form/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/form/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/modal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/modal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/list/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/list/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/list/item/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/list/item/index.tsx" afterDir="false" />
@@ -23,8 +15,6 @@
       <change beforePath="$PROJECT_DIR$/src/pages/main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/main/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/master/index.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/master/index.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/master/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/master/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/react-app-env.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/react-app-env.d.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/main" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,11 +73,11 @@
       <recent name="D:\ts\aspirin\src\components" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ts\aspirin\src\pages\main" />
       <recent name="D:\ts\aspirin\src\components" />
       <recent name="D:\ts\aspirin\src\pages" />
       <recent name="D:\ts\aspirin\src\pages\list" />
       <recent name="D:\ts\aspirin\public" />
-      <recent name="D:\ts\aspirin\src\pages\id" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -119,7 +109,7 @@
       <workItem from="1582465503906" duration="24669000" />
       <workItem from="1582679573815" duration="6937000" />
       <workItem from="1582765315610" duration="8211000" />
-      <workItem from="1582811398431" duration="32098000" />
+      <workItem from="1582811398431" duration="71614000" />
     </task>
     <task id="LOCAL-00001" summary="Initial">
       <created>1582513810876</created>
@@ -156,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582692996753</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Initial">
+      <created>1582863186984</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582863186984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,18 +169,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582343219272" />
-    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582692996021">
+    <state x="598" y="120" key="CommitChangelistDialog2" timestamp="1582863186123">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582692996021" />
+    <state x="598" y="120" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1582863186123" />
     <state x="829" y="418" key="Github.ShareDialog" timestamp="1582515006964">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="829" y="418" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582515006964" />
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1582693002052">
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2" timestamp="1582863197071">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582693002052" />
+    <state x="552" y="256" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1582863197071" />
     <state x="667" y="276" width="586" height="488" key="find.popup" timestamp="1582511929177">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -192,9 +189,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="692" y="323" key="git4idea.merge.GitPullDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1582607189687" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1582813046348">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1583009098239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1582813046348" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1583009098239" />
   </component>
 </project>

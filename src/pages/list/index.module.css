@@ -28,3 +28,7 @@
 :global(.thumb-horizontal) {
     background-color: red !important;
 }
+
+.active {
+    background-color: #999999;
+}

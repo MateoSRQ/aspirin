@@ -13,12 +13,15 @@ const { Search } = Input;
 
 interface State {
     sedes: any
-    status: string
+    status: string,
+    active: any
 };
 
 interface Props {
     sedes: any
     status: string
+    handleItemClick: any
+    active: any
 }
 
 
@@ -28,35 +31,45 @@ export default class Component extends React.Component<Props, State> {
         super(props);
         this.state = ({
             sedes: null,
-            status: 'loading'
+            status: 'loading',
+            active: this.props.active
         });
         //this.loadSede = this.loadSede.bind(this);
     }
 
-    async componentDidMount(): Promise<void> {
-        log.info('List:componentDidMount reached');
-        //await this.loadSede();
-    }
 
     componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any): void {
-        console.log('diu')
-        if (this.props != prevProps) {
+        log.info('List:componentDidUpdate reached');
+        if (this.props !== prevProps) {
             this.setState({
                 sedes: this.props.sedes,
-                status:this.props.status
+                status:this.props.status,
+                active: this.props.active
             })
+            if (this.props.active !== prevProps.active) {
+                this.props.handleItemClick(this.props.active);
+            }
         }
+
+
     }
+
 
     render() {
         log.info('List:render reached');
         let items = null;
         if (this.state.sedes) {
             items = this.state.sedes.map((item: any) => {
+                let active = false;
+                if (this.state.active == item._id) {
+                    active = true;
+                }
                 return (
                     <Item
                         {...item}
+                        active={active}
                         key={item._id}
+                        handleClick={() => {this.props.handleItemClick(item._id)}}
                     />
                 )
             })

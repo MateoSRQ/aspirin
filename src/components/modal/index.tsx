@@ -9,7 +9,9 @@ log.setLevel('warn');
 
 interface Props {
     visible?: boolean
-    handleSubmit?: any
+    handleChange: any,
+    handleOk?: any
+    [x: string]: any
 }
 interface State {
     visible: boolean
@@ -28,14 +30,12 @@ export default class Component extends React.Component<Props, State> {
 
     handleCancel() {
         log.info('Modal:handleCancel reached');
-        this.setState({
-            visible: false
-        });
+        this.props.handleChange(false)
     }
 
     handleSubmit() {
         log.info('Modal:handleSubmit reached');
-        this.props?.handleSubmit();
+        this.props.handleOk();
     }
 
     componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any): void {
@@ -49,15 +49,18 @@ export default class Component extends React.Component<Props, State> {
 
     render() {
         log.info('Modal:render reached');
+
+        let {children, ...props} = this.props;
+
         return (
             <Modal
-                title="Basic Modal"
+                {...props}
                 visible={this.state.visible}
                 onOk={this.handleSubmit}
                 onCancel={this.handleCancel}
             >
                 <div className={[style.component].join(' ')}>
-                    {this.props.children}
+                    {children}
                 </div>
             </Modal>
         )
