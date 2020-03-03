@@ -39,3 +39,9 @@
     margin-top: -2px;
     text-align: right;
 }
+
+.component :global(.ant-select-arrow){
+    position: absolute !important;
+    top: 50% !important;
+    right: 11px !important;
+}

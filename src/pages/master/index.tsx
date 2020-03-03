@@ -15,6 +15,7 @@ import jsonpack from "jsonpack";
 interface State {
     bigSize: boolean,
     sedes: null,
+    examenes: null,
     sedesStatus: string,
     sedesData: any,
     sedeActive: any,
@@ -28,12 +29,14 @@ export default class Component extends React.Component<Props, State> {
         super(props);
         this.handleMediaQueryChange = this.handleMediaQueryChange.bind(this);
         this.loadSede = this.loadSede.bind(this);
+        this.loadExamen = this.loadExamen.bind(this);
         this.handleNewSedeSubmit = this.handleNewSedeSubmit.bind(this);
         this.itemClick = this.itemClick.bind(this);
 
         this.state = {
             bigSize: true,
             sedes: null,
+            examenes: null,
             sedesStatus: 'loading',
             sedesData: null,
             sedeActive: null,
@@ -62,7 +65,7 @@ export default class Component extends React.Component<Props, State> {
         }
     }
 
-    async handleNewSedeSubmit(data: any) {
+    async handleNewSedeSubmit(data: any, modal: boolean = false) {
         log.info('Master:handleNewSedeSubmit reached');
         try {
             let r1 = await axios({
@@ -86,6 +89,7 @@ export default class Component extends React.Component<Props, State> {
                 sedes: response,
                 sedesStatus: 'loaded',
                 sedeActive: rr1._id
+
             })
             console.log(this.state);
         }
@@ -107,7 +111,8 @@ export default class Component extends React.Component<Props, State> {
 
     componentDidMount(): void {
         log.info('Master:componentDidMount reached');
-        this.loadSede();
+        this.loadSede()
+        this.loadExamen()
     }
 
     async loadSede() {
@@ -121,6 +126,18 @@ export default class Component extends React.Component<Props, State> {
             sedes: response,
             sedesStatus: 'loaded',
             sedeActive: response[0]._id
+        })
+    }
+
+    async loadExamen() {
+        log.info('Master:loadExamen reached');
+        let p1 = await axios({method: 'get', url: 'http://127.0.0.1:3333/api/v3/examenes'});
+        let response = p1.data; //jsonpack.unpack(p1.data);
+
+
+
+        await this.setState({
+            examenes: response,
         })
     }
 
@@ -153,6 +170,7 @@ export default class Component extends React.Component<Props, State> {
                         <Main
                             newSedeSubmit={this.handleNewSedeSubmit}
                             data={this.state.sedesData}
+                            examenes={this.state.examenes}
                             status={this.state.mainStatus}
                         />
                     </div>

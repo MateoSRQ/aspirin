@@ -11,7 +11,7 @@ import Modal from '../../components/modal';
 
 import Item from './item';
 
-import {Form, Input} from '../../components/form';
+import {Form, Input, Select, Tree} from '../../components/form';
 import _ from 'lodash';
 import axios from 'axios';
 
@@ -23,11 +23,13 @@ interface State {
     newSedeVisible: boolean
     newNodoVisible: boolean
     data: any
+    examenes: any
 };
 
 interface Props {
     newSedeSubmit: any
     data: any
+    examenes: any
     status: string
 };
 
@@ -54,7 +56,8 @@ export default class Component extends React.Component<Props, State> {
         this.state = {
             newSedeVisible: false,
             newNodoVisible: false,
-            data: null
+            data: null,
+            examenes: null
         };
 
     }
@@ -106,64 +109,14 @@ export default class Component extends React.Component<Props, State> {
         this.setState({newNodoVisible: e});
     }
 
-
-
-
-
     componentDidUpdate(prevProps: Readonly<Props>, prevState: Readonly<State>, snapshot?: any): void {
         if (this.props !== prevProps) {
             this.setState({
-                data: this.props.data
+                data: this.props.data,
+                examenes: this.props.examenes
             });
         }
     }
-
-
-/*
-    newModalHandleChange (name: string, e: any, status: string) {
-        let data = this.state.newModalData;
-        data[name] = {value: e, status: status};
-        this.setState({newModalData: data});
-    }
-
-    async newModalHandleSubmit () {
-        let values  = await this.newSedeHandleSubmit();
-        let status = _.find(values, function(o: any) { return o.status == 'error' ; });
-
-        let data: any;
-        data = {
-            nombre: null,
-            descripcion: null
-        };
-        if (status == undefined) {
-            values.map((value: any ) => {
-                data[value.name] = value.value
-            })
-
-            await this.props.newSedeSubmit(data);
-            this.setState({
-                newModalVisible: false
-            });
-        }
-    }
-
-    async newSede() {
-        log.info('Main:newSede reached');
-        await this.setState({
-            newModalVisible: true
-        });
-        console.log(this.state);
-    }
-
-    async newNodo() {
-        log.info('Main:newSede reached');
-        await this.setState({
-            newNodeModalVisible: true
-        });
-        console.log(this.state);
-    }
-
- */
 
     render() {
         log.info('Main:render reached');
@@ -249,6 +202,24 @@ export default class Component extends React.Component<Props, State> {
                     >
                         <Input name="nombre"      value={null} placeholder="Nodo"      label="Nodo"        rules={{presence: {allowEmpty: false, message: 'Este campo no puede estar vacío'}}}/>
                         <Input name="descripcion" value={null} placeholder="Codo"      label="Codo"        rules={{presence: {allowEmpty: false, message: 'Este campo no puede estar vacío'}}}/>
+                        <Select
+                            name="atencion"
+                            value={1}
+                            placeholder="Atención"
+                            label="Atención"
+                            rules={{presence: {allowEmpty: false, message: 'Este campo no puede estar vacío'}}}
+                            data={[{value: 1, title: 'Masculino'}, {value: 2, title: 'Femenino'}]}
+                        />
+                        <Tree
+                            name="servicio"
+                            mode="multiple"
+                           // value={['']}
+                            placeholder="Servicio"
+                            label="Servicio"
+                            rules={{presence: {allowEmpty: false, message: 'Este campo no puede estar vacío'}}}
+                            data={this.state.examenes}
+                        />
+
                     </Form>
                 </Modal>
 
