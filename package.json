@@ -11,7 +11,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "antd": "^3.26.11",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "jsonpack": "^1.1.5",
     "lodash": "^4.17.15",
     "loglevel": "^1.6.7",
